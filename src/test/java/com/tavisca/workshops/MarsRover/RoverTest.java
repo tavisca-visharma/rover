@@ -1,85 +1,97 @@
 package com.tavisca.workshops.MarsRover;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class RoverTest {
 
+    Rover rover;
+
+    @BeforeEach
+    void initialization(){
+        rover = new Rover();
+    }
+
+    @Test
+    void roverCanBeInitializedWithGivenPosition() {
+        rover.setStartingPosition(1, 3, 'N');
+        assertEquals(1, rover.getXCoordinate());
+        assertEquals(3, rover.getYCoordinate());
+        assertEquals('N', rover.getDirection());
+    }
+
     @Test
     @Tag("to_be_done-tests")
-    void roverCanBeInitializedWithGivenPosition(){
+    void roverCanRotateLeftFromNorthDirection() {
 
     }
 
     @Test
     @Tag("to_be_done-tests")
-    void roverCanRotateLeftFromNorthDirection(){
+    void roverCanRotateLeftFromEastDirection() {
 
     }
 
     @Test
     @Tag("to_be_done-tests")
-    void roverCanRotateLeftFromEastDirection(){
+    void roverCanRotateRightFromSouthDirection() {
 
     }
 
     @Test
     @Tag("to_be_done-tests")
-    void roverCanRotateRightFromSouthDirection(){
+    void roverCanRotateRightFromWestDirection() {
 
     }
 
     @Test
     @Tag("to_be_done-tests")
-    void roverCanRotateRightFromWestDirection(){
+    void roverCanRotateRightFromNorthDirection() {
 
     }
 
     @Test
     @Tag("to_be_done-tests")
-    void roverCanRotateRightFromNorthDirection(){
+    void roverCanRotateRightFromEastDirection() {
 
     }
 
     @Test
     @Tag("to_be_done-tests")
-    void roverCanRotateRightFromEastDirection(){
+    void roverCanRotateLeftFromSouthDirection() {
 
     }
 
     @Test
     @Tag("to_be_done-tests")
-    void roverCanRotateLeftFromSouthDirection(){
+    void roverCanRotateLeftFromWestDirection() {
 
     }
 
     @Test
     @Tag("to_be_done-tests")
-    void roverCanRotateLeftFromWestDirection(){
+    void roverCanMoveForwardInNorthDirection() {
 
     }
 
     @Test
     @Tag("to_be_done-tests")
-    void roverCanMoveForwardInNorthDirection(){
+    void roverCanMoveForwardInEastDirection() {
 
     }
 
     @Test
     @Tag("to_be_done-tests")
-    void roverCanMoveForwardInEastDirection(){
+    void roverCanMoveForwardInSouthDirection() {
 
     }
 
     @Test
     @Tag("to_be_done-tests")
-    void roverCanMoveForwardInSouthDirection(){
-
-    }
-
-    @Test
-    @Tag("to_be_done-tests")
-    void roverCanMoveForwardInWestDirection(){
+    void roverCanMoveForwardInWestDirection() {
 
     }
 
