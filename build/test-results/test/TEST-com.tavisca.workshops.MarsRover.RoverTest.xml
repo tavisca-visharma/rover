@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tavisca.workshops.MarsRover.RoverTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-07-27T12:14:13" hostname="RENTLAPT0010" time="0.027">
+  <properties/>
+  <testcase name="dummyTest()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.027"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
