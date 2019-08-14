@@ -8,7 +8,7 @@ public class RotateDirections {
     private HashMap<Character, IRotate> characterIRotateHashMap;
 
     public RotateDirections() {
-        characterIRotateHashMap = new HashMap<>() {{
+        characterIRotateHashMap = new HashMap<Character, IRotate>() {{
             put('L', new LeftRotate());
             put('R', new RightRotate());
         }};

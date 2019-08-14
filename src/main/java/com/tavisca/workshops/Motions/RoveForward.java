@@ -9,7 +9,7 @@ public class RoveForward {
     private HashMap<Directions, IRoveForward> directionsIRoveForwardHashMap;
 
     public RoveForward() {
-        directionsIRoveForwardHashMap = new HashMap<>() {{
+        directionsIRoveForwardHashMap = new HashMap<Directions, IRoveForward>() {{
             put(Directions.EAST, new RoveForwardInEastDirection());
             put(Directions.SOUTH, new RoveForwardInSouthDirection());
             put(Directions.WEST, new RoveForwardInWestDirection());

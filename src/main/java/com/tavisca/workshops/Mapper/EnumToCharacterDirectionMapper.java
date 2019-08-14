@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class EnumToCharacterDirectionMapper {
     public final static HashMap<Directions, Character> DIRECTIONS_CHARACTER_HASH_MAP
-            = new HashMap<>() {{
+            = new HashMap<Directions, Character>() {{
         put(Directions.EAST, 'E');
         put(Directions.SOUTH, 'S');
         put(Directions.WEST, 'W');
