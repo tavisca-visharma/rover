@@ -1,5 +1,10 @@
 #TODO
 FROM java:8
 COPY src/ var/www/java
+COPY gradle/ var/www/java
+COPY gradlew var/www/java
+COPY gradlew.bat var/www/java
+COPY settings.gradle var/www/java
+COPY build.gradle.kts var/www/java
 WORKDIR var/www/java
-RUN gradlew build
+CMD ["gradlew","build"]
