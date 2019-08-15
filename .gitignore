@@ -12,6 +12,16 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+
+/.gradle
+/.idea
+/.project
+/.classpath
+/target
+/**/*.class
+/**/*.swp
+/build
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/

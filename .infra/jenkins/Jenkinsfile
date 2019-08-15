@@ -35,6 +35,8 @@ pipeline {
             steps {
                 sh script: '''
                     echo "I am Building DockerImage ="
+					docker build -t "mars-rover-container"
+					docker run mars-rover-container
                 ''',
             label: "Building Docker Image"
             }
@@ -44,6 +46,8 @@ pipeline {
             steps {
                 sh script: '''
                     echo "I am Pubishing DockerImage ="
+					docker tag mars-rover-container bsvishal123/mars_rover_container:first
+					docker push bsvishal123/mars_rover_container:first
                 ''',
             label: "Publishing Docker Image"
             }
