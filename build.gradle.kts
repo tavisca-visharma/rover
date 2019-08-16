@@ -19,6 +19,12 @@ configure<JavaPluginConvention> {
     targetCompatibility = JavaVersion.VERSION_1_8
 }
 
+val jar by tasks.getting(Jar::class) {
+    manifest {
+        attributes["Main-Class"] = "com.tavisca.workshops.MarsRover.RoverMain"
+    }
+}
+
 tasks.named<Test>("test") {
     dependsOn("cleanTest")
     useJUnitPlatform {

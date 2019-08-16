@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.tavisca.workshops.MarsRover.RoverTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2019-08-16T04:22:23" hostname="RENTLAPT0010" time="0.122">
+<testsuite name="com.tavisca.workshops.MarsRover.RoverTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2019-08-16T08:37:25" hostname="RENTLAPT0010" time="0.089">
   <properties/>
-  <testcase name="roverCanBeInitializedWithGivenPosition()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.041"/>
-  <testcase name="roverCanRotateLeftFromWestDirection()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.01"/>
-  <testcase name="roverCanRotateLeftFromEastDirection()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.002"/>
-  <testcase name="roverCanRotateRightFromNorthDirection()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.002"/>
-  <testcase name="roverCanRotateLeftFromSouthDirection()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.002"/>
+  <testcase name="roverCanBeInitializedWithGivenPosition()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.038"/>
+  <testcase name="roverCanRotateLeftFromWestDirection()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.009"/>
+  <testcase name="roverCanRotateLeftFromEastDirection()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.001"/>
+  <testcase name="roverCanRotateRightFromNorthDirection()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.001"/>
+  <testcase name="roverCanRotateLeftFromSouthDirection()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.0"/>
   <testcase name="roverCanMoveForwardInSouthDirection()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.012"/>
-  <testcase name="roverCanProcessSequenceOfCommands1()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.002"/>
-  <testcase name="roverCanProcessSequenceOfCommands2()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.002"/>
+  <testcase name="roverCanProcessSequenceOfCommands1()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.001"/>
+  <testcase name="roverCanProcessSequenceOfCommands2()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.001"/>
   <testcase name="roverCanProcessSequenceOfCommands3()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.001"/>
   <testcase name="roverCanProcessSequenceOfCommands4()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.001"/>
-  <testcase name="roverCanMoveForwardInWestDirection()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.002"/>
-  <testcase name="roverCanMoveForwardInEastDirection()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.002"/>
+  <testcase name="roverCanMoveForwardInWestDirection()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.001"/>
+  <testcase name="roverCanMoveForwardInEastDirection()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.001"/>
   <testcase name="roverCanRotateRightFromWestDirection()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.001"/>
   <testcase name="roverCanRotateRightFromSouthDirection()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.001"/>
-  <testcase name="roverCanRotateRightFromEastDirection()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.002"/>
-  <testcase name="roverCanRotateLeftFromNorthDirection()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.002"/>
-  <testcase name="roverCanMoveForwardInNorthDirection()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.0"/>
+  <testcase name="roverCanRotateRightFromEastDirection()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.001"/>
+  <testcase name="roverCanRotateLeftFromNorthDirection()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.001"/>
+  <testcase name="roverCanMoveForwardInNorthDirection()" classname="com.tavisca.workshops.MarsRover.RoverTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
