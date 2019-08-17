@@ -4,9 +4,9 @@ pipeline {
         stage('Build') {
             steps {
                 bat script: '''
-                    echo "\n----------------------------------- Build Step Started -----------------------------------\n"
+                    echo "----------------------------------- Build Step Started -----------------------------------"
                     gradlew build
-					echo "\n----------------------------------- Build Step Completed -----------------------------------"
+					echo "----------------------------------- Build Step Completed -----------------------------------"
                 ''',
             label: "Building Project"
             }
@@ -15,9 +15,9 @@ pipeline {
         {
             steps {
                 bat script: '''
-                    echo "\n----------------------------------- Tests Step Started -----------------------------------\n"
+                    echo "----------------------------------- Tests Step Started -----------------------------------"
                     gradlew test
-					echo "\n----------------------------------- Tests Step Completed -----------------------------------"
+					echo "----------------------------------- Tests Step Completed -----------------------------------"
                 ''',
             label: "Running Unit Test Cases"
             }
@@ -26,9 +26,9 @@ pipeline {
         {
             steps {
                 bat script: '''
-                    echo "\n----------------------------------- Sonarcube Step Started -----------------------------------\n"
-					#TODO Sonarcube Scan
-					echo "\n----------------------------------- Sonarcube Step Completed -----------------------------------"
+                    echo "----------------------------------- Sonarcube Step Started -----------------------------------"
+					echo "#TODO Sonarcube Scan"
+					echo "----------------------------------- Sonarcube Step Completed -----------------------------------"
                 ''',
             label: "Running Sonarqube Scan"
             }
@@ -37,10 +37,10 @@ pipeline {
         {
             steps {
                 bat script: '''
-                    echo "\n----------------------------------- Build DockerImage Step Started -----------------------------------\n"
+                    echo "----------------------------------- Build DockerImage Step Started -----------------------------------"
 					docker build -t "mars-rover-container" -f .infra/docker/Dockerfile .
 					docker run mars-rover-container
-					echo "\n----------------------------------- Build DockerImage Step Completed -----------------------------------"
+					echo "----------------------------------- Build DockerImage Step Completed -----------------------------------"
                 ''',
             label: "Building Docker Image"
             }
@@ -49,10 +49,10 @@ pipeline {
         {
             steps {
                 bat script: '''
-                    echo "\n----------------------------------- Publishing DockerImage Step Started -----------------------------------\n"
+                    echo "----------------------------------- Publishing DockerImage Step Started -----------------------------------"
 					docker tag mars-rover-container bsvishal123/mars_rover_container:first
 					docker push bsvishal123/mars_rover_container:first
-					echo "\n----------------------------------- Publishing DockerImage Step Completed -----------------------------------"
+					echo "----------------------------------- Publishing DockerImage Step Started -----------------------------------"
                 ''',
             label: "Publishing Docker Image"
             }
