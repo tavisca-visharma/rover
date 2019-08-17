@@ -1,5 +1,9 @@
 pipeline {
     agent any
+	parameters{
+		string(name: 'DOCKER_USERNAME')
+		string(name: 'DOCKER_PASSWORD')
+	}
 	
     stages {
         stage('Build') {
@@ -51,7 +55,7 @@ pipeline {
             steps {
                 bat script: '''
                     echo "----------------------------------- Publishing DockerImage Step Started -----------------------------------"
-					docker login -u="bsvishal123" -p="12345678"
+					docker login -u=%DOCKER_USERNAME% -p=%DOCKER_PASSWORD%
 					docker tag mars-rover-container bsvishal123/mars_rover_container:first
 					docker push bsvishal123/mars_rover_container:first
 					echo "----------------------------------- Publishing DockerImage Step Completed -----------------------------------"
