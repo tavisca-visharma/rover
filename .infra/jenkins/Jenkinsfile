@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat script: '''
+                powershell script: '''
                     echo "----------------------------------- Build Step Started -----------------------------------"
                     
 					gradlew build
@@ -21,7 +21,7 @@ pipeline {
         stage('Test')
         {
             steps {
-                bat script: '''
+                powershell script: '''
                     echo "----------------------------------- Tests Step Started -----------------------------------"
                     
 					gradlew test
@@ -34,7 +34,7 @@ pipeline {
         stage('Static Code Analysis')
         {
             steps {
-                bat script: '''
+                powershell script: '''
                     echo "----------------------------------- Sonarcube Step Started -----------------------------------"
 					
 					echo "#TODO Sonarcube Scan" 
@@ -47,7 +47,7 @@ pipeline {
         stage('Build DockerImage')
         {
             steps {
-                bat script: '''
+                powershell script: '''
                     echo "----------------------------------- Build DockerImage Step Started -----------------------------------"
 					
 					docker build -t "mars-rover-container" -f .infra/docker/Dockerfile .
@@ -61,7 +61,7 @@ pipeline {
         stage('Publish DockerImage')
         {
             steps {
-                bat script: '''
+                powershell script: '''
                     echo "----------------------------------- Publishing DockerImage Step Started -----------------------------------"
 					
 					docker login -u %DOCKER_USERNAME% -p %DOCKER_PASSWORD%
@@ -76,7 +76,7 @@ pipeline {
     }
 	post{
 		always{
-			bat script: '''
+			powershell script: '''
 				docker logout
 			'''
 			deleteDir()
