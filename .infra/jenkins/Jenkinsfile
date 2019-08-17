@@ -5,8 +5,7 @@ pipeline {
             steps {
                 bat script: '''
                     echo "I am in build step"
-                    chmod +x ./gradlew
-                    ./gradlew build
+                    gradlew build
                 ''',
             label: "Building Project"
             }
@@ -16,7 +15,7 @@ pipeline {
             steps {
                 bat script: '''
                     echo "I am in Test step"
-                    ./gradlew test
+                    gradlew test
                 ''',
             label: "Running Unit Test Cases"
             }
