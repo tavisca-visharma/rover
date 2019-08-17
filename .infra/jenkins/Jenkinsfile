@@ -28,7 +28,7 @@ pipeline {
             steps {
                 bat script: '''
                     echo "----------------------------------- Sonarcube Step Started -----------------------------------"
-					echo "#TODO Sonarcube Scan"
+					echo "#TODO Sonarcube Scan" 
 					echo "----------------------------------- Sonarcube Step Completed -----------------------------------"
                 ''',
             label: "Running Sonarqube Scan"
