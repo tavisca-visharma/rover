@@ -50,7 +50,7 @@ pipeline {
             steps {
                 bat script: '''
                     echo "----------------------------------- Publishing DockerImage Step Started -----------------------------------"
-					docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+					echo "User : $DOCKER_USERNAME pass : $DOCKER_PASSWORD"
 					docker tag mars-rover-container bsvishal123/mars_rover_container:first
 					docker push bsvishal123/mars_rover_container:first
 					echo "----------------------------------- Publishing DockerImage Step Completed -----------------------------------"
