@@ -53,7 +53,7 @@ pipeline {
                     echo "----------------------------------- Publishing DockerImage Step Started -----------------------------------"
 					docker login -u="bsvishal123" -p="12345678"
 					docker tag mars-rover-container bsvishal123/mars_rover_container:first
-					docker push bsvishal123/mars_rover_container:latest
+					docker push bsvishal123/mars_rover_container:first
 					echo "----------------------------------- Publishing DockerImage Step Completed -----------------------------------"
                 ''',
             label: "Publishing Docker Image"
