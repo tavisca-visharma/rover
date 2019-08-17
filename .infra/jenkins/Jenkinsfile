@@ -1,5 +1,6 @@
 pipeline {
     agent any
+	
     stages {
         stage('Build') {
             steps {
@@ -28,6 +29,7 @@ pipeline {
                 bat script: '''
                     echo "----------------------------------- Sonarcube Step Started -----------------------------------"
 					echo "#TODO Sonarcube Scan"
+					
 					echo "----------------------------------- Sonarcube Step Completed -----------------------------------"
                 ''',
             label: "Running Sonarqube Scan"
